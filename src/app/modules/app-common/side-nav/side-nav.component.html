@@ -24,9 +24,11 @@
     <mat-nav-list class="sidenav-list">
       <div class="d-flex justify-content-center" style="background: #004058;">
         <div class="dp-border">
-          <img src="/assets/images/placeholder.jpg" alt="Dp" class="toolbar-dp">
+          <img src="https://via.placeholder.com/80" alt="Dp" class="toolbar-dp">
         </div>
       </div>
+
+      <small class="white-smoke-txt ml-2">MAIN</small>
       <!-- <mat-list-item class="sidenav-list-item" *ngFor="let item of routes" routerLinkActive="active">
         <a style="color: white"
           mat-list-item
@@ -38,6 +40,10 @@
         </a>
       </mat-list-item> -->
       <app-side-nav-item [toggleEvent]="toggleEvent" *ngFor="let item of routes" [item]="item"></app-side-nav-item>
+
+      <small class="white-smoke-txt ml-2 mt-4">YOUR STUFF</small>
+      <app-side-nav-item [item]="singleProfileSideItem"></app-side-nav-item>
+
     </mat-nav-list>
   </mat-sidenav>
 

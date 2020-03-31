@@ -26,6 +26,12 @@ export class SideNavComponent implements OnInit {
   sidenavWidth: Observable<any> = of(20);
   toggleEvent: EventEmitter<any> = new EventEmitter<any>();
   sidenavToggled: Observable<any> | any = this.sidenavToggleService.toggleState.value;
+  singleProfileSideItem: any = {
+    title: 'Profile',
+    icon: 'person',
+    route: '/jobs/available',
+    iconURL: '/assets/SVG/user-white.svg'
+  }
   routes: any[] = [
     {
       title: 'Dashboard',
