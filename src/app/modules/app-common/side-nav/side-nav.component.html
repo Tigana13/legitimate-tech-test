@@ -1,0 +1,51 @@
+<mat-sidenav-container>
+<!--  <mat-sidenav #sidenav-->
+<!--               [ngStyle]="{ 'width.em': (sidenavToggled) ? 20 : 6 }"-->
+<!--               fixedInViewport="true"-->
+<!--               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"-->
+<!--               [mode]="(isHandset$ | async) ? 'over' : 'side'"-->
+<!--               [opened]="!(isHandset$ | async)" class="main-sidenav">-->
+  <mat-sidenav #sidenav
+               fixedInViewport="true"
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="!(isHandset$ | async)" class="main-sidenav">
+
+    <mat-toolbar>
+      <mat-toolbar-row class="justify-content-center sidenav-toolbar">
+        <div class="d-block mt-5 mb-3">
+          <h5 class="text-center text-white ubuntu-font">Balozi Mkuu</h5>
+          <p class="text-center text-white ubuntu-font">
+            <small>balozi.mkuu@eabl.com</small>
+          </p>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-nav-list class="sidenav-list">
+      <div class="d-flex justify-content-center" style="background: #004058;">
+        <div class="dp-border">
+          <img src="/assets/images/placeholder.jpg" alt="Dp" class="toolbar-dp">
+        </div>
+      </div>
+      <!-- <mat-list-item class="sidenav-list-item" *ngFor="let item of routes" routerLinkActive="active">
+        <a style="color: white"
+          mat-list-item
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: false}"
+          [routerLink]="[item.route]">
+          <mat-icon matListIcon [svgIcon]="item.icon" style="color: white; font-size: 20px;"></mat-icon>
+          <p matLine style="margin-left: 15px">{{item.title}}</p>
+        </a>
+      </mat-list-item> -->
+      <app-side-nav-item [toggleEvent]="toggleEvent" *ngFor="let item of routes" [item]="item"></app-side-nav-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content [ngStyle]="{ 'margin-left.px': (sidenavToggled) ? 280 : 60  }">
+    <app-top-nav [toggleEvent]="toggleEvent" (toggleSidenav)="toggleSidenav()"></app-top-nav>
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

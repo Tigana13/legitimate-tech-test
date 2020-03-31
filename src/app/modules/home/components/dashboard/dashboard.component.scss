@@ -1,0 +1,43 @@
+.banner-row {
+  display: inline-flex;
+  background: #daff66;
+  padding-bottom: .5em;
+}
+
+.card {
+  color: white;
+  width: 20%;
+  margin-right: 1em;
+}
+
+.card-qty {
+  font-size: 4em;
+}
+
+.card-violet {
+  background: #490085;
+}
+.card-red {
+  background: #a2003f;
+}
+.card-green {
+  background: #00a07d;
+}
+.card-orange {
+  background: #d73f00;
+}
+.card-blue {
+  background: #1c48a5;
+}
+
+.card-row {
+  display: inline-flex;
+}
+
+.sub-section-content {
+  padding: 0 1em;
+}
+
+.major-title {
+  margin-bottom: .001em solid #607d8b!important;
+}

@@ -1,0 +1,135 @@
+// Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Color Scheme
+$blue:    #25AAE1 !default;
+$indigo:  #AA00FF !default;
+$purple:  #D500F9 !default;
+$pink:    #e83e8c !default;
+$red:     #FF1744 !default;
+$orange:  #FF6D00 !default;
+$yellow:  #ffc107 !default;
+$green:   #00E676 !default;
+$teal:    #1DE9B6 !default;
+$cyan:    #00B8D4 !default;
+$dark-blue: #0F75BC !default;
+
+// Common Colors
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+//Theme Colors
+$primaryDark: darken($primary, 5%);
+$primaryLite: lighten($primary, 45%);
+
+//LoginLog width
+$logoWidth:500px;
+$Logomargin:0px;
+
+// primary btn color scheme
+$primaryBtnBackground: $white;
+$primaryBtnFontColor: $primary;
+$primaryBtnBorder: $primary;
+$primaryBtnFocusBackground:$primaryLite;
+// secondary btn color scheme
+$secondaryBtnBackground: $white;
+$secondaryBtnFontColor: $primary;
+$secondaryBtnBorder: $primary;
+$secondaryBtnFocusBackground:$primaryLite;
+// text btn color scheme
+$textBtnFontColor:$primary;
+$textBtnBackground:$white;
+// filter btn color scheme
+$filterBtnBackground: $white;
+$filterBtnFontColor: $primary;
+$filterBtnFocusBackground: $primaryLite;
+$filterBtnFocusFontColor: $primary;
+$filterBtnBorder: $primary;
+
+//sideNav color scheme
+$sideNavBackground:$primary;
+$sideNavBackgroundDark:$primary;
+$sideNavFontColor:$white;
+$activeNavLinkBackground: lighten($primary, 22.5%);
+$newBtnFontColor: $primary;
+$newBtnBackground: $white; 
+
+// Titles
+$primaryTitle: $primary;
+$secondaryTitle: $secondary;
+$infoTitle: $primary;
+$successTitle: $success;
+$warningTitle: $warning;
+
+//Inputs
+$checkboxBackground: $primary; 
+$inputBorderColor:$primary;
+
+//Table
+$tableTitleFontColor:$primary;
+$hoverTableRowBackground: rgba($primary, .1);
+
+//icons
+$primaryIconColors: $primary;
+
+//links
+$callToActionLinkFontColor: $primary;
+
+//tabs
+$activeTabBackground: $primary;
+$activeTabBackgroundDark: $primaryDark;
+$activeTabFontColor: #fff;
+
+//Tiles
+$greenTileBackground: #00BFA5;
+$greenTileBackgroundDark: #1DE9B6;
+$brightGreenTileBackground: #2fe2b3;
+$brightGreenTileBackgroundDark: #2fe2b3;
+$blueTileBackground: #39a5dc;
+$blueTileBackgroundDark: #004368;
+$redTileBackground: #FF1744;
+$redTileBackgroundDark: #FF5252;
+$darkBlueTileBackground: #00B0FF;
+$darkBlueTileBackgroundDark: #0091EA;
+$purpleTileBackground: #D500F9;
+$purpleTileBackgroundDark: #AA00FF;
+$yellowTileBackground: #FF5252;
+$yellowTileBackgroundDark: #FF1744;
+$tileFontColor: #fff;
+$tileRadius: 0.3em;
+
+//filters
+$greenFilter:#00E676;
+$greenFilterDark:#00C853;
+$orangeFilter:#FF9100;
+$orangeFilterDark:#FF6D00;
+$primaryFilter:#39a5dc;
+$primaryFilterDark:#004368;
+$blueFilter:#00B0FF;
+$blueFilterDark:#0091EA;
+$violetFilter:#D500F9;
+$violetFilterDark:#AA00FF;
+$redFilter:#FF1744;
+$redFilterDark:#FF5252;
+
+// Inputs
+$input-height: auto;
+$input-border-radius: 8px !default;
+
+

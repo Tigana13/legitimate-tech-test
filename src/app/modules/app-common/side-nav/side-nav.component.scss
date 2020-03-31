@@ -1,0 +1,93 @@
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.mat-sidenav {
+  width: 17.5em;
+  //background: linear-gradient(rgba(0, 102, 172, 0.91), rgba(0, 59, 95, 0.94));
+  border-right: .001rem solid #d1d1d1;
+  background: #205369;
+  color: white !important;
+}
+
+.sidenav {
+  background: transparent;
+}
+
+.mat-toolbar {
+  background: transparent;
+}
+
+.toolbar-title {
+  margin: 0 16px 0 16px;
+  color: #0091EA;
+  font-size: .6em;
+}
+
+.mat-subheader {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.common-add {
+    text-align: center;
+    margin: .5em 0;
+}
+
+.common-add-button {
+    color: #ffffff;
+    background: #00E676;
+    width: 75%;
+    border-radius:25px;
+}
+
+.mat-list-item {
+  height: 41px !important;
+}
+
+.mat-list-item.active {
+  background: #25AAE1 !important;
+}
+
+.sidenav-list-item {
+  margin-top: .3em;
+}
+
+.page-container {
+  font-family: 'Ubuntu', sans-serif !important;
+  background: #FAFAFA;
+}
+
+@media screen and (max-width: 960px) {
+  .page-container {
+    padding: 0 2em !important;
+  }
+}
+
+.mat-toolbar-row img {
+  margin: 1.7rem 0 1.7em -1em;;
+  max-height: 6em;
+  max-width: 5em;
+}
+
+.mat-toolbar-row {
+  padding-bottom: 1.4rem;
+}
+
+.mat-toolbar-row img {
+  border-bottom: .001rem solid #f5c12e;
+}
+
+.mat-list-item {
+  font-family: "Ubuntu",sans-serif;
+  color: white !important;
+}
+
+.sidenav-toolbar {
+  padding: 5em 0 4em 0!important;
+  background: #004058;
+}
+
+.sidenav-list {
+  padding-top: 0 !important;
+}

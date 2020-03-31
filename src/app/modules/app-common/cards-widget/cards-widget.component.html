@@ -1,0 +1,9 @@
+<div class="mat-cards-container">
+  <mat-card *ngFor="let card of cards" class="mat-card" [class]="card.class" (click)="clicked(card)">
+    <mat-card-content>
+      <p class="text-center">{{card.text}}
+        <b>{{card.value}}</b>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

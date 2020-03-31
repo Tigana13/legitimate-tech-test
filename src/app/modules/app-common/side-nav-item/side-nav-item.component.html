@@ -1,0 +1,16 @@
+<a mat-list-item matTooltip="{{(sideNavToggled) ? '' : item.title | titlecase}}" [ngStyle]="{'padding-left': (depth * 12) + 'px'}" (click)="onItemSelected(item)"
+   [ngClass]="{'active': item.route ? router.isActive(item.route, true): false, 'expanded': expanded}"
+   class="menu-list-item">
+  <mat-icon aria-hidden="false" svgIcon="{{item.title}}" style="padding-right: .4em" *ngIf="item"></mat-icon>
+<!--  <img  class="ml-3 mr-4" [src]="item.iconURL" [width]="(sideNavToggled) ? 22 : 45">-->
+  <!-- <mat-icon class="routeIcon">{{item.icon}}</mat-icon> -->
+  <span *ngIf="sideNavToggled">{{item.title}}</span>
+  <span fxFlex *ngIf="item.children && item.children.length">
+    <span fxFlex></span>
+    <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">
+      expand_more
+    </mat-icon>
+  </span>
+</a>
+<app-side-nav-item *ngFor="let child of item.children" [item]="child" [depth]="depth+1">
+</app-side-nav-item>
